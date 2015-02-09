@@ -46,8 +46,8 @@ class HangpersonApp < Sinatra::Base
   # Everytime a guess is made, we should eventually end up at this route.
   # Use existing methods in HangpersonGame to check if player has
   # won, lost, or neither, and take the appropriate action.
-  # Notice that the show.erb template expects to use instance variables
-  # @wrong_guesses and @word_with_guesses, so set those up here.
+  # Notice that the show.erb template expects to use the instance variables
+  # wrong_guesses and word_with_guesses from @game.
   get '/show' do
     ### YOUR CODE HERE ###
     erb :show # You may change/remove this line
